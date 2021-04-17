@@ -29,6 +29,7 @@ que contenga las funciones para realizar las cinco operaciones.
 
 int main()
 {
+	setbuf(stdout,NULL);
     int numeroA,numeroB,opcion;
     int flagA = 0;
     int flagB = 0;
@@ -102,7 +103,7 @@ int main()
             {
                 printf("Error, ingrese ambos números.\n");
             }
-            //system("pause");
+            system("pause");
 
             break;
 
@@ -115,6 +116,6 @@ int main()
 
         } while(opcion != 5);
 
-    //system("cls");
+    system("cls");
 	return EXIT_SUCCESS;
 }
